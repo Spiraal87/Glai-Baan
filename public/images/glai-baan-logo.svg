@@ -1,0 +1,34 @@
+<svg viewBox="0 0 300 380" xmlns="http://www.w3.org/2000/svg">
+  <!-- House body -->
+  <rect x="70" y="100" width="160" height="140" fill="none" stroke="white" stroke-width="3" stroke-linejoin="miter"/>
+
+  <!-- Roof -->
+  <polygon points="150,40 70,100 230,100" fill="none" stroke="white" stroke-width="3" stroke-linejoin="miter"/>
+
+  <!-- Chimney -->
+  <rect x="180" y="75" width="25" height="45" fill="none" stroke="white" stroke-width="3"/>
+
+  <!-- Door -->
+  <rect x="125" y="190" width="50" height="50" fill="none" stroke="white" stroke-width="3"/>
+
+  <!-- Door handle -->
+  <circle cx="170" cy="215" r="3" fill="white"/>
+
+  <!-- Left leg -->
+  <path d="M 100 240 Q 90 260 85 290" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Right leg -->
+  <path d="M 200 240 Q 210 260 215 290" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Left cloud -->
+  <path d="M 180 60 Q 185 50 195 50 Q 200 45 210 50 Q 215 48 220 55 Q 215 65 200 65 Q 190 68 180 60" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Right cloud -->
+  <path d="M 210 45 Q 215 35 225 35 Q 232 30 242 35 Q 248 32 253 40 Q 248 52 232 55 Q 220 58 210 45" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Text: Glai Baan -->
+  <text x="150" y="330" font-family="cursive" font-size="36" font-weight="bold" text-anchor="middle" fill="white">Glai Baan</text>
+
+  <!-- Text: Thai Street Food -->
+  <text x="150" y="360" font-family="Arial, sans-serif" font-size="14" letter-spacing="2" text-anchor="middle" fill="white">THAI STREET FOOD</text>
+</svg>
