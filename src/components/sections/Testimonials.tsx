@@ -155,7 +155,7 @@ export default function Testimonials() {
       className="py-20 px-6 md:px-12 lg:px-20"
       style={{ backgroundColor: '#1a1a1a' }}
     >
-      <style>{quoteStyles}</style>
+      <style dangerouslySetInnerHTML={{ __html: quoteStyles }} />
       <div className="max-w-7xl mx-auto">
         <FadeInSection className="text-center mb-16">
           <p className="text-gold text-xs tracking-widest uppercase font-body mb-4">
