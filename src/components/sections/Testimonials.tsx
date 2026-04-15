@@ -172,8 +172,8 @@ export default function Testimonials() {
         {/* Carousel - Only render after hydration to prevent mismatch */}
         {isHydrated && (
           <>
-            <div className="relative">
-              <div className="overflow-hidden">
+            <div className="relative" style={{ minHeight: '420px' }}>
+              <div className="overflow-hidden" style={{ height: '420px' }}>
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentSlide}
@@ -229,8 +229,8 @@ export default function Testimonials() {
                 onClick={prevSlide}
                 onHoverStart={() => setAutoPlay(false)}
                 onHoverEnd={() => setAutoPlay(true)}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 md:-translate-x-20 text-gold hover:text-gold-light transition-colors p-2 rounded-lg hover:bg-gold/10"
-                whileHover={{ x: -2 }}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 md:-translate-x-20 text-gold p-2 rounded-lg cursor-pointer"
+                whileHover={{ x: -2, color: '#f5deb3' }}
                 whileTap={{ opacity: 0.7 }}
                 aria-label="Previous reviews"
               >
@@ -242,8 +242,8 @@ export default function Testimonials() {
                 onClick={nextSlide}
                 onHoverStart={() => setAutoPlay(false)}
                 onHoverEnd={() => setAutoPlay(true)}
-                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 md:translate-x-20 text-gold hover:text-gold-light transition-colors p-2 rounded-lg hover:bg-gold/10"
-                whileHover={{ x: 2 }}
+                className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 md:translate-x-20 text-gold p-2 rounded-lg cursor-pointer"
+                whileHover={{ x: 2, color: '#f5deb3' }}
                 whileTap={{ opacity: 0.7 }}
                 aria-label="Next reviews"
               >
