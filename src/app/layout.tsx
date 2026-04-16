@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { Playfair_Display, Inter } from "next/font/google";
+import Header from "@/components/sections/Header";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -33,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="bg-bg-dark text-cream font-body">
+        <Header />
         {children}
         <CookieBanner />
       </body>

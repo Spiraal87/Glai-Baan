@@ -2,39 +2,6 @@
 
 import FadeInSection from '@/components/ui/FadeInSection';
 
-// Simple icon components
-function ClockIcon() {
-  return (
-    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
-    </svg>
-  );
-}
-
-function MapPinIcon() {
-  return (
-    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M12 2C6.48 2 2 6.48 2 12c0 7 10 13 10 13s10-6 10-13c0-5.52-4.48-10-10-10zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
-    </svg>
-  );
-}
-
-function PhoneIcon() {
-  return (
-    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
-    </svg>
-  );
-}
-
-function ParkingIcon() {
-  return (
-    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M13 13h-2v-2h2v2zm4-8H7c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 14H7V7h10v12z" />
-    </svg>
-  );
-}
-
 export default function VisitUs() {
   return (
     <section
@@ -44,71 +11,58 @@ export default function VisitUs() {
     >
       <div className="max-w-7xl mx-auto">
         <FadeInSection className="text-center mb-12">
-          <h2 className="font-display text-4xl text-cream">Find Us</h2>
+          <h2 className="font-display text-4xl text-cream">Reservations & Visit Us</h2>
         </FadeInSection>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Left Column - Info */}
           <FadeInSection direction="left">
             <div className="space-y-8">
-              {/* Hours */}
+              {/* Reservations Header */}
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="text-gold">
-                    <ClockIcon />
-                  </div>
-                  <h3 className="font-display text-cream text-lg">Hours</h3>
-                </div>
-                <p className="text-cream/80">Monday – Sunday</p>
-                <p className="text-cream/80">12:00pm – 9:00pm</p>
+                <h3 className="font-display text-cream text-xl mb-6">Reservations</h3>
               </div>
 
-              {/* Address */}
+              {/* Reservation Policy */}
+              <div className="space-y-4">
+                <p className="text-cream/80 text-sm">
+                  <span className="text-gold font-semibold">Reservations accepted only for dinner service</span>
+                </p>
+                <p className="text-cream/80 text-sm">
+                  <span className="text-gold font-semibold">Lunch is first come first serve</span>
+                </p>
+              </div>
+
+              {/* How to Reserve */}
+              <div className="border-l-2 border-gold/30 pl-4 py-4">
+                <p className="text-cream/70 text-sm leading-relaxed">
+                  To make a reservation - <span className="text-gold font-semibold">call into the restaurant Monday - Friday before 5 PM</span> and leave a message. We will call you back the next business day to go over availability.
+                </p>
+              </div>
+
+              {/* Party Size */}
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="text-gold">
-                    <MapPinIcon />
-                  </div>
-                  <h3 className="font-display text-cream text-lg">Address</h3>
-                </div>
-                <address className="not-italic text-cream/80 leading-relaxed">
-                  <div>2333 E Osborn Rd</div>
-                  <div>Phoenix, AZ 85016</div>
+                <p className="text-cream/70 text-sm">
+                  <span className="text-gold font-semibold">Reservations are for parties of 1-7 people</span>
+                </p>
+              </div>
+
+              {/* Contact Info */}
+              <div className="pt-4 border-t border-gold/20">
+                <h3 className="font-display text-cream text-lg mb-4">Glai Baan</h3>
+                <address className="not-italic text-cream/80 leading-relaxed text-sm">
+                  <div>Glai Baan, 2333 E Osborn Rd, Phoenix, Arizona 85016, United States</div>
                 </address>
               </div>
 
               {/* Phone */}
               <div>
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="text-gold">
-                    <PhoneIcon />
-                  </div>
-                  <h3 className="font-display text-cream text-lg">Phone</h3>
-                </div>
                 <a
                   href="tel:+16025955881"
-                  className="text-gold hover:text-gold-light transition-colors"
+                  className="text-gold hover:text-gold-light transition-colors font-semibold text-lg"
                 >
                   (602) 595-5881
                 </a>
-              </div>
-
-              {/* Walk-ins Note */}
-              <div className="border-l-2 border-gold/30 pl-4">
-                <p className="text-cream/70 text-sm">
-                  <span className="font-semibold">Walk-ins only.</span> We don&apos;t
-                  take reservations — come as you are.
-                </p>
-              </div>
-
-              {/* Parking */}
-              <div className="flex gap-3">
-                <div className="text-gold shrink-0">
-                  <ParkingIcon />
-                </div>
-                <p className="text-cream/70 text-sm">
-                  Street parking available nearby.
-                </p>
               </div>
             </div>
           </FadeInSection>

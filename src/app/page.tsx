@@ -2,6 +2,7 @@ import Hero from '@/components/sections/Hero';
 import PressStrip from '@/components/sections/PressStrip';
 import About from '@/components/sections/About';
 import PopularDishes from '@/components/sections/PopularDishes';
+import Testimonials from '@/components/sections/Testimonials';
 import FullMenu from '@/components/sections/FullMenu';
 import Gallery from '@/components/sections/Gallery';
 import VisitUs from '@/components/sections/VisitUs';
@@ -14,6 +15,7 @@ export default function Home() {
       <PressStrip />
       <About />
       <PopularDishes />
+      <Testimonials />
       <FullMenu />
       <Gallery />
       <VisitUs />

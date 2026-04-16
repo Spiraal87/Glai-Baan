@@ -17,6 +17,7 @@ export const popularDishes: Dish[] = [
     price: '$8',
     isGlutenFree: false,
     spiceLevel: 0,
+    image: '/images/kanom-jeeb.jpg',
   },
   {
     id: 2,
@@ -44,6 +45,7 @@ export const popularDishes: Dish[] = [
     price: '$15',
     isGlutenFree: true,
     spiceLevel: 3,
+    image: '/images/pad-kee-mao.jpg',
   },
   {
     id: 5,
@@ -53,6 +55,7 @@ export const popularDishes: Dish[] = [
     price: '$14',
     isGlutenFree: false,
     spiceLevel: 2,
+    image: '/images/kao-soi.jpg',
   },
   {
     id: 6,
@@ -62,5 +65,6 @@ export const popularDishes: Dish[] = [
     price: '$10',
     isGlutenFree: true,
     spiceLevel: 3,
+    image: '/images/somtum.jpg',
   },
 ];
