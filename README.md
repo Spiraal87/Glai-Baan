@@ -9,13 +9,16 @@
 ## Screenshots
 
 ### Hero Section
-![Hero](public/images/interior-ambience.jpg)
+![Hero](public/screenshots/hero.png)
 
 ### Popular Dishes
-![Dishes](public/images/food-detail.jpg)
+![Popular Dishes](public/screenshots/popular-dishes.png)
 
 ### Gallery
-![Gallery](public/images/patio-seating.jpg)
+![Gallery](public/screenshots/gallery.png)
+
+### Visit Us
+![Visit Us](public/screenshots/visit-us.png)
 
 ---
 
