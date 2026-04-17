@@ -4,14 +4,16 @@ import Image from 'next/image';
 import { popularDishes } from '@/data/dishes';
 import FadeInSection from '@/components/ui/FadeInSection';
 import ImagePlaceholder from '@/components/ui/ImagePlaceholder';
+import { motion } from 'framer-motion';
 
 function DishCard({ dish, index }: { dish: typeof popularDishes[0]; index: number }) {
   return (
-    <div
+    <motion.div
       className="group relative bg-bg-warm border border-gold/10 hover:border-gold/30 transition-all duration-300 rounded-lg overflow-hidden hover:shadow-xl hover:shadow-gold/10"
-      style={{
-        animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`,
-      }}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: '-60px' }}
+      transition={{ duration: 0.5, delay: index * 0.1, ease: 'easeOut' }}
     >
       {/* Image Container */}
       <div className="relative w-full h-64 overflow-hidden">
@@ -65,7 +67,7 @@ function DishCard({ dish, index }: { dish: typeof popularDishes[0]; index: numbe
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
@@ -76,19 +78,7 @@ export default function PopularDishes() {
       className="py-20 px-6 md:px-12 lg:px-20"
       style={{ backgroundColor: "#1a1a1a" }}
     >
-      <style>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(40px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
-      <div className="max-w-7xl mx-auto">
+<div className="max-w-7xl mx-auto">
         <FadeInSection className="text-center mb-12">
           <h2 className="font-display text-4xl text-cream mb-3">
             What People Keep Coming Back For
