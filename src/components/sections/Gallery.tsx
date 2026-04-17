@@ -13,6 +13,7 @@ const galleryItems = [
   { id: 4, label: 'Bar Area', image: '/images/bar-area.jpg' },
   { id: 5, label: 'String Lights', image: '/images/string-lights.jpg' },
   { id: 6, label: 'Food Detail', image: '/images/food-detail.jpg' },
+  { id: 7, label: 'Moo Ping', image: '/images/glai-bann-hero.jpg' },
 ];
 
 export default function Gallery() {

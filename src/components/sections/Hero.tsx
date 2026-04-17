@@ -31,12 +31,15 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex flex-col items-center justify-center bg-bg-dark overflow-hidden"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       style={{
-        background: 'radial-gradient(ellipse at center, #2a1f1a 0%, #1a1a1a 70%)',
+        backgroundImage: 'url(/images/glai-baan-interior-hero.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
       }}
     >
-      <div className="flex flex-col items-center justify-center text-center px-4">
+      <div className="absolute inset-0 bg-black/60 z-0" />
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
         {/* Logo */}
         <motion.div
           className="mb-8 flex items-center justify-center w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full bg-white border-4 border-gold overflow-hidden"
