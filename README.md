@@ -8,14 +8,14 @@
 
 ## Screenshots
 
-### Hero Section
+### Hero
 ![Hero](public/screenshots/hero.png)
 
-### Popular Dishes
-![Popular Dishes](public/screenshots/popular-dishes.png)
+### About & Popular Dishes
+![About and Dishes](public/screenshots/about-dishes.png)
 
-### Gallery
-![Gallery](public/screenshots/gallery.png)
+### Testimonials
+![Testimonials](public/screenshots/testimonials-menu.png)
 
 ### Visit Us
 ![Visit Us](public/screenshots/visit-us.png)
