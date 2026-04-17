@@ -20,8 +20,8 @@ export default function About() {
             transition={{ duration: 0.3 }}
           >
             <Image
-              src="/images/interior.jpg"
-              alt="Restaurant Interior"
+              src="/images/glai-baan-market.jpeg"
+              alt="Glai Baan Market"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-500"
               priority
