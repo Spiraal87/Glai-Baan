@@ -1,5 +1,7 @@
 # Glai Baan — Authentic Isan Thai Restaurant
 
+Built for a local restaurant as a complete redesign and modernization of their web presence.
+
 > A modern, animated marketing website for **Glai Baan**, an authentic Isan Thai restaurant. Built with Next.js 14, Tailwind CSS, and Framer Motion.
 
 **Live Site:** [glai-baan.vercel.app](https://glai-baan.vercel.app)
